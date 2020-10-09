@@ -61,8 +61,7 @@ public class MyApplication extends Application
                         return true;
                     }
                 })
-//                .sslSocketFactory(sslParams.sSLSocketFactory, sslParams.trustManager)
-                .sslSocketFactory(sslParams.sSLSocketFactory)
+                .sslSocketFactory(sslParams.sSLSocketFactory, sslParams.trustManager)
                 .build();
         OkHttpUtils.initClient(okHttpClient);
 
