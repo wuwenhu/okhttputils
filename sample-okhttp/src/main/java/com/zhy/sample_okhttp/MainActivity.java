@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity
 {
 
     private String mBaseUrl = "http://192.168.31.242:8888/okHttpServer/";
+    private String mBaseUrl2 = "http://globalapp.pearmedia.cn";
 
     private static final String TAG = "MainActivity";
 
@@ -105,8 +106,7 @@ public class MainActivity extends AppCompatActivity
 
     public void getHtml(View view)
     {
-        String url = "http://www.zhiyun-tech.com/App/Rider-M/changelog-zh.txt";
-        url="http://www.391k.com/api/xapi.ashx/info.json?key=bd_hyrzjjfb4modhj&size=10&page=1";
+        String url = mBaseUrl2 + "/jsp/v1/home.jsp";
         OkHttpUtils
                 .get()
                 .url(url)
